@@ -1,0 +1,69 @@
+body, p { margin: 0; padding: 0; box-sizing: border-box;}
+
+body { padding: 100px; 
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	; }
+
+#content {
+	margin: 100px auto 20px auto;
+	border: 10px solid #4C4C4C;
+	width: 400px;
+	height: 266px;
+	position: relative;
+}
+
+#content img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+p { text-align: center; }
+
+/********** Link Styles ***********/
+
+#links {
+	width: 420px;
+	display: flex; 
+	margin: auto;
+}
+
+#links a {
+	display: block;  /* a normalde inline element, block gibi davranmasini istiyorum */
+	flex: 1;  
+	/* glex-grow:1 (genisleme)
+	   flex-shrink:1 (kuculme)
+	   flex-basis:1 (baslangic noktasi yokmus gibi davranma) 
+	   flex:1 bu anlamlara gelir bu ucunun kisaltmasi gibidir. ekran buyuyup kuculdukce uyum saglar esnek yapidadir. */
+	background: #6c0250;
+	height: 50px;
+	line-height: 50px;
+	color: #D5D5D5;
+	text-decoration: none;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#links a:hover {
+	background: #f97ae8;
+	color: #fff;
+}
+
+/************ Animation Styles ************/
+
+.fadeinimg{
+	animation: fadein 2s;
+}
+@keyframes fadein {  /*@keyframes animasyon ozelliginde anomasyonun baslangic bitis ve ara noktalarini belirlemek icin kullanilir*/
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
